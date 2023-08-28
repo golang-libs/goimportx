@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/anqiansong/goimportx/pkg/importx"
+	"github.com/golang-libs/goimportx/pkg/importx"
 	"github.com/spf13/cobra"
 )
 

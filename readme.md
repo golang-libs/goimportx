@@ -18,7 +18,7 @@ goimportx is a tool to help you manage your go imports.
 ## Installation
 
 ```bash
-$ go install github.com/anqiansong/goimportx@latest
+$ go install github.com/golang-libs/goimportx@latest
 ```
 
 ## Usage

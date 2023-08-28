@@ -6,7 +6,7 @@ import (
 	"go/token"
 	"strings"
 
-	"github.com/anqiansong/goimportx/pkg/mapx"
+	"github.com/golang-libs/goimportx/pkg/mapx"
 	"golang.org/x/tools/go/ast/astutil"
 )
 

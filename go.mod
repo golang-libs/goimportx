@@ -1,4 +1,4 @@
-module github.com/anqiansong/goimportx
+module github.com/golang-libs/goimportx
 
 go 1.18
 

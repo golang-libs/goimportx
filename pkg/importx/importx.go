@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/anqiansong/goimportx/pkg/collection"
+	"github.com/golang-libs/goimportx/pkg/collection"
 	"golang.org/x/mod/modfile"
 	"golang.org/x/tools/go/ast/astutil"
 )
@@ -80,12 +80,12 @@ func (cg commentGroups) in(comment *ast.CommentGroup) bool {
 // PackageType returns the package type of the import path.
 func (ip ImportPath) PackageType() string {
 	// Inspired by https://cs.opensource.google/go/x/tools/+/master:go/ast/astutil/imports.go;l=196
-	if strings.Contains(ip.value, ".") {
-		return groupNameThird
-	}
-
 	if len(ip.modulePath) > 0 && strings.HasPrefix(ip.value, ip.modulePath) {
 		return groupNameLocal
+	}
+
+	if strings.Contains(ip.value, ".") {
+		return groupNameThird
 	}
 
 	return groupNameSystem
